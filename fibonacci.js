@@ -12,8 +12,6 @@ const fibs = (n) => {
   return result
 }
 
-console.log(fibs(8))
-
 const fibsRec = (n) => {
   return n <= 0
     ? 'Argument must be atleast 1'
@@ -24,4 +22,4 @@ const fibsRec = (n) => {
     : [...fibsRec(n - 1), fibsRec(n - 1)[n - 2] + fibsRec(n - 1)[n - 3]]
 }
 
-console.log(fibsRec(8))
+module.exports = { fibs, fibsRec }
