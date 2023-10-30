@@ -1,3 +1,13 @@
 # Project: Recursion
 
-[Project link](https://www.theodinproject.com/lessons/javascript-recursion)
+There are two assignments here: `fibonacci.js` and `mergeSort.js`.
+
+1. The first one writes two functions to generate an array of `n` **fibonacci** numbers using **iteration** and **recursion**.
+2. The second one is a function to sort an array using the **merge sort algorithm**.
+
+## Packages used
+
+- `nodemon`
+- `jest`
+
+This assignments were a part of The Odin Project. Look at the [project](https://www.theodinproject.com/lessons/javascript-recursion) here.
