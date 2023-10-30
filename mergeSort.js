@@ -2,14 +2,12 @@
 
 const mergeSort = (arr) => {
   if (arr.length === 1) return arr
-  else {
-    let sliceIdx = Math.floor(arr.length / 2)
 
-    let left = mergeSort(arr.slice(0, sliceIdx))
-    let right = mergeSort(arr.slice(sliceIdx))
+  let sliceIdx = Math.floor(arr.length / 2)
+  let left = mergeSort(arr.slice(0, sliceIdx))
+  let right = mergeSort(arr.slice(sliceIdx))
 
-    return merge(mergeSort(left), mergeSort(right))
-  }
+  return merge(mergeSort(left), mergeSort(right))
 }
 
 const merge = (left, right) => {
