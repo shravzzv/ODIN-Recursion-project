@@ -2,7 +2,7 @@
   "name": "odin-recursion-project",
   "version": "1.0.0",
   "description": "[Project link](https://www.theodinproject.com/lessons/javascript-recursion)",
-  "main": "fibonacci.js",
+  "main": "mergeSort.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon"
