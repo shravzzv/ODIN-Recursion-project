@@ -1,6 +1,7 @@
 /* Build a function mergeSort that takes in an array and returns a sorted array, using a recursive merge sort methodology. */
 
 const mergeSort = (arr) => {
+  if (arr.length < 1) return 'Input must have atleast one element!'
   if (arr.length === 1) return arr
 
   let sliceIdx = Math.floor(arr.length / 2)
@@ -30,18 +31,4 @@ const merge = (left, right) => {
   return [...merged, ...left.slice(lIdx), ...right.slice(rIdx)]
 }
 
-console.log(mergeSort([1, 5, 99, 3, 4, 0, -8, 54]))
-
-/* 
-1. Select the entire array
-2. Split the array as evenly as possible
-3. Keep splitting the array by halves until only a single element remains
-4. An array of length 1 cannot be split, ready for merge
-5. Merge selected arrays back together, in sorted order
-6. Select the minimum of the two values
-7. Add the selected value to the sorted array
-8. When one list becomes empty, copy all values from the remaining array into the sorted array
-9. Add the selected value to the sorted array
-10. Finished merging
-11. Repeat it for all halves
-*/
+module.exports = { mergeSort, merge }
